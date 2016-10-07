@@ -1,0 +1,31 @@
+/*for(int i=1; i<=n;i++)
+		
+	{
+		al.add(s.getName());
+		al.add(String.valueOf(s.getId()));
+		
+		bufferWritter.write(s.getName());
+		bufferWritter.write("\n");
+		
+		bufferWritter.write(String.valueOf(s.getId()));
+		bufferWritter.write("\n");
+		
+		bufferWritter.write(s.getAddress());
+		bufferWritter.write("\n");
+		
+		bufferWritter.write(String.valueOf(s.getMark1()));
+		bufferWritter.write("\n");
+		
+		bufferWritter.write(String.valueOf(s.getMark2()));
+		bufferWritter.write("\n");
+		
+		bufferWritter.write(String.valueOf(s.getMark3()));
+		bufferWritter.write("\n");
+		
+		bufferWritter.write(String.valueOf(s.getMark4()));
+		bufferWritter.write("\n");
+		
+		bufferWritter.write(String.valueOf(s.getMark5()));
+		bufferWritter.write("\n");		
+	    bufferWritter.close(); 
+		}*/
