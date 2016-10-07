@@ -1,0 +1,24 @@
+<html>
+<head><center>Employee Details</head>
+<body bgcolor="orange">
+<table border="1" width="50px">
+<tr>
+<th>EMP_Name</th>
+<th>EMP_Number</th>
+<th>Location</th>
+<th>Position</th>
+</tr>
+
+ {% for row in result%}
+ <tr>
+ <td>{{row[0]}}</td>
+ <td>{{row[1]}}</td>
+ <td>{{row[2]}}</td>
+ <td>{{row[3]}}</td>
+ </tr>
+{%endfor%}
+</table>
+<p><center> <a href="/save">Back</a></center></p>
+</body>
+</html>
+
