@@ -1,2 +1,0 @@
-query = select * from details2 WHERE name = ?;
-insert query = insert into details2(id ,name , email ,ph ,deg , date)values(?,?,?,?,?,?);
