@@ -1,0 +1,25 @@
+Method overloading problem
+Addition Main Class
+
+
+D:\Trainee Tasks\Venniyammal\Workspace\Trainee_project>javac -d . "src/com/trese
+lle/Addition.java"
+
+D:\Trainee Tasks\Venniyammal\Workspace\Trainee_project>java -cp . opt.com.tresel
+le.Addition
+
+
+Inheritance - task 
+Driver Java file 
+
+D:\Trainee Tasks\Venniyammal\Workspace\Trainee_project>javac -d . "src/com/trese
+lle/Driver.java"
+
+D:\Trainee Tasks\Venniyammal\Workspace\Trainee_project>java -cp . opt.com.tresel
+le.Driver
+
+D:\Trainee Tasks\Venniyammal\Workspace\Trainee_project>javac -d . "src/com/trese
+lle/Encapsulation.java"
+
+D:\Trainee Tasks\Venniyammal\Workspace\Trainee_project>java -cp . opt.com.tresel
+le.Encapsulation

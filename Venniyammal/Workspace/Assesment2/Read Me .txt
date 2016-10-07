@@ -1,0 +1,24 @@
+
+
+To Compile the Interfaces 
+
+ d:/>workspace/ Assesement2> javac -d . "src/com/treselle/vehicle.java"
+ d:/>workspace/ Assesement2> javac -d . "src/com/treselle/twowheeler.java"
+ d:/>workspace/ Assesement2> javac -d . "src/com/treselle/fourwheeler.java"
+
+To compile abstract class
+ 
+ d:/>workspace/ Assesement2> javac -d . "src/com/treselle/sound.java"
+
+To Compile Classes
+ d:/>workspace/ Assesement2> javac -d . "src/com/treselle/Car.java"
+ d:/>workspace/ Assesement2> javac -d . "src/com/treselle/Bike.java"
+ d:/>workspace/ Assesement2> javac -d . "src/com/treselle/Jeep.java"
+ d:/>workspace/ Assesement2> javac -d . "src/com/treselle/Lorry.java"
+ d:/>workspace/ Assesement2> javac -d . "src/com/treselle/Driver1.java"
+ 
+To Run
+ d:/>workspace/ Assesement2> java -classpath . opt.com.treselle.Driver1
+ 
+ 
+ 
