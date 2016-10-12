@@ -1,0 +1,22 @@
+<html>
+<body bgcolor="cornsilk">
+<center>
+<p><h1><span style="color:blue">Customers Registered List</span></h1></p>
+<caption><h2><span style="color:red">VIEW TABLE</span></h2></caption>
+<table style="width:50%" bgcolor="silver" border="1" width="50px">
+<tr>
+<th>Name</th>
+<th>Number</th>
+</tr>
+<tr>
+{% for row in assign %}
+<td>{{row[0]}}</td>
+<td>{{row[1]}}</td>
+</tr>
+{%endfor%}
+</table>
+<p><a href="/summit">go back</a></p>
+</center>
+</body>
+</html>
+
