@@ -1,0 +1,35 @@
+<?xml version="1.0" ?> 
+<project name="Assignment11" default="jar">
+    
+	
+	<path id="compile.classpath">
+		<fileset dir="lib">
+			<include name="*.jar"/>
+			<include name="*."/>
+		</fileset>
+	</path>
+
+    <target name="clean">
+        <delete dir="bin"/>
+		   <delete dir="dist"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="bin"/>
+        <javac srcdir="src" destdir="bin"/>
+    </target>
+
+    <target name="jar" depends="run">
+        <mkdir dir="dist"/>
+        <jar destfile="dist/StartUp.jar" basedir="bin">
+            <manifest>
+                <attribute name="Main-Class" value="com.treselle.view.StartUp"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run" depends="compile">
+        <java jar="dist/StartUp.jar" fork="true"/>
+    </target>
+
+</project>
