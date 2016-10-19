@@ -1,0 +1,22 @@
+<html>
+   <body bgcolor="Hotpink">
+    {% extends "layout.html" %}
+	{% block body %}
+	   {% if error %}
+	      <p class=error><strong>Error:</strong> {{ error }}
+	   {% endif %}
+	   <center>
+       <form action = "http://localhost:5000/login" method = "post">
+         <p><h1><span style="color:blue">Register Customer and Add It In DB</span></h1></p>
+         <p>Enter Name:
+         <input type = "text" name = "nm" required /><p>
+		 <p>Enter number:
+		 <input type="text" name="num" required/></p>
+         <p><input type = "submit" value = "buy" /></p>
+       </form>
+      	  <p><center> <a href="/views">Click to view</a></center></p>
+          <p><center><a href="/deletepage">Click here to delete</a></center></p>
+	   </center>
+	{% endblock %}
+   </body>
+</html>
