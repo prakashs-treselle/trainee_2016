@@ -1,0 +1,20 @@
+apply plugin: 'java'
+jar {
+
+manifest {
+    attributes 'Main-Class': 'AppTset'
+}
+}
+
+task runJar(dependsOn:jar) << {
+  javaexec { 
+    main="-jar";
+    args = [
+            "D:/GRADLE/Test1/build/libs/Test1.jar",
+            "-c",
+            "FrontPage?suite&format=text"
+			
+           ]
+		   standardInput = System.in
+  } 
+}

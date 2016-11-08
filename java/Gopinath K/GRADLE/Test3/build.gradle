@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+jar {
+   
+manifest {
+    attributes 'Main-Class': 'opt.com.treselle.JDBCExample'
+}
+}
+
+task runJar(dependsOn:jar) << {
+  javaexec { 
+    main="-jar";
+    args = [
+            "D:/GRADLE/Test3/build/libs/Test3.jar",
+            "-c",
+            "FrontPage?suite&format=text"
+           ]
+  } 
+}
