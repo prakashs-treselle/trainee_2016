@@ -1,0 +1,42 @@
+apply plugin: 'java'
+// JDK 7
+sourceCompatibility = '1.7'
+targetCompatibility = '1.7'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+
+	compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.6'
+	compile group: 'org.springframework', name: 'spring-jdbc', version: '3.1.0.RELEASE'
+	compile 'ch.qos.logback:logback-classic:1.1.3'
+	compile 'org.springframework:spring-webmvc:4.1.6.RELEASE'
+	compile 'javax.servlet:jstl:1.2'
+	
+}
+
+jar {
+
+manifest {
+    attributes 'Main-Class': 'com.javatpoint.Test'
+}
+from {
+    configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+  }
+}
+
+task runJar(dependsOn:jar) << {
+  javaexec { 
+    main="-jar";
+    args = [
+            "D:/GRADLE/Test5/fsp/build/libs/fsp.jar",
+            "-c",
+            "FrontPage?suite&format=text"
+           ]
+  } 
+}
+
+
